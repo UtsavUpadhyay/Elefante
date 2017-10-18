@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_activity_row_root" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:alpha="0.7" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_date" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:gravity="right"
+            android:text="@string/daterow" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tv_dateValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_takenBy" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:gravity="right"
+            android:text="@string/takenbyrow" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tv_takenByValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_type" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:gravity="right"
+            android:text="@string/typerow" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tv_typeValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_title" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:gravity="right"
+            android:text="@string/titlerow" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tv_titleValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_discription" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:gravity="right"
+            android:text="@string/disprow" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/tv_discriptionValue" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

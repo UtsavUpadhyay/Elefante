@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout android:id="@+id/historyheader" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:alpha="0.7" android:orientation="horizontal"
+        android:paddingLeft="3dp" android:paddingRight="3dp" android:paddingTop="3dp">
+
+        <TextView android:id="@+id/texthistory" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@color/black"
+            android:gravity="center" android:text="@string/history"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/cyan"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/historylay1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@id/historyheader"
+        android:layout_marginTop="5dp" android:orientation="vertical">
+        <LinearLayout android:id="@+id/hisotorytype" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal"
+
+        >
+
+            <TextView android:id="@+id/texthistorytype" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/type"
+                android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/red"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/historyradiolay" android:layout_width="match_parent"
+            android:layout_height="25dp" android:layout_marginTop="2dp"
+            android:orientation="horizontal" android:weightSum="4">
+
+            <RadioGroup android:id="@+id/radiohistorygroup" android:layout_width="fill_parent"
+                android:layout_height="35dp" android:checkedButton="@+id/radiohistoryall"
+                android:orientation="horizontal"
+
+            >
+
+                <RadioButton android:id="@+id/radiohistoryall" android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:layout_marginLeft="1dp"
+                    android:layout_weight="1" android:text="@string/all"
+                    android:textStyle="bold" />
+
+
+                <RadioButton android:id="@+id/radiohistorytreat" android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:layout_marginLeft="1dp"
+                    android:layout_weight="1" android:text="@string/treat"
+                    android:textStyle="bold" />
+
+                <RadioButton android:id="@+id/radiohistoryvaccin"
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dp" android:layout_weight="1"
+                    android:text="@string/vaccin" android:textStyle="bold" />
+
+                <RadioButton android:id="@+id/radiohistorynone" android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:layout_marginLeft="1dp"
+                    android:layout_weight="1" android:text="@string/note"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/listViewhistory" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/historylay1" android:layout_marginTop="15dp"
+        android:dividerHeight="1dp"></ListView>
+
+</RelativeLayout>

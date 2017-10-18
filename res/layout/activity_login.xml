@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/relMainApp"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:alpha="0.9" android:background="@drawable/loginfin"
+    android:focusable="true" android:padding="5dp" tools:context="com.elefante.MainActivity"
+    tools:ignore="NestedWeights,ContentDescription,HardcodedText,TooDeepLayout,TooManyViews">
+
+
+    <LinearLayout android:id="@+id/LinearLogin1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_marginTop="210dp" android:orientation="horizontal"
+
+    >
+
+        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+            android:src="@drawable/username" />
+        <EditText android:id="@+id/LogineditText1" android:layout_width="fill_parent"
+            android:layout_height="30dp" android:background="@drawable/shape_edittext" android:ems="8"
+            android:hint="@string/username" android:inputType="textPersonName"
+            android:paddingLeft="3dp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLogin2" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@id/LinearLogin1" android:layout_marginTop="5dp"
+        android:contentDescription="" android:orientation="horizontal">
+
+        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+            android:src="@drawable/pass" />
+
+        <EditText android:id="@+id/LogineditText2" android:layout_width="match_parent"
+            android:layout_height="30dp" android:background="@drawable/shape_edittext" android:ems="8"
+            android:hint="@string/password" android:inputType="textPassword"
+            android:paddingLeft="3dp" />
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/checkBoxlogin" android:layout_width="wrap_content"
+        android:layout_height="35dp" android:layout_alignLeft="@+id/LinearLogin2"
+        android:layout_below="@+id/LinearLogin2" android:layout_marginTop="2dp"
+        android:text="Keep me Logged in"
+
+        android:textColor="@android:color/white" android:textStyle="bold" />
+
+
+    <Button android:id="@+id/Loginsignupbutton1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@id/LinearLogin2"
+        android:layout_centerVertical="true" android:layout_marginTop="50dp"
+        android:height="30dp" android:background="@drawable/grey_shape"
+        android:text="@string/sign_in" android:textStyle="bold" />
+
+
+</RelativeLayout>
